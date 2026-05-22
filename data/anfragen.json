@@ -1,0 +1,141 @@
+[
+  {
+    "reisende": {
+      "erwachsene": 2,
+      "kinder": 0,
+      "kinderAlter": [],
+      "reisedatumVon": "2026-05-15",
+      "reisedatumBis": "2026-05-24",
+      "flexibel": false,
+      "dauerTage": 8
+    },
+    "destination": {
+      "destination": "Marrko",
+      "ueberraschen": false,
+      "regionen": [],
+      "reiseart": [
+        "Städtetrip",
+        "Aktiv & Wandern",
+        "Wellness"
+      ]
+    },
+    "stil": {
+      "komfortLevel": "premium",
+      "budgetProPerson": 7000,
+      "wichtig": [
+        "Lokale Erfahrungen",
+        "All-Inclusive"
+      ]
+    },
+    "kontakt": {
+      "vorname": "Jeremy",
+      "nachname": "Frossard",
+      "email": "jeremyfrossard@icloud.com",
+      "telefon": "",
+      "kontaktweg": "email",
+      "kontaktzeit": "egal",
+      "nachricht": "Test Test Test",
+      "datenschutz": true
+    },
+    "metadaten": {
+      "quelleDestination": "Marrko",
+      "eingegangenAm": "2026-05-22T10:57:53.840Z",
+      "status": "angebot-gesendet"
+    },
+    "id": "a79beb4b-1782-492b-8142-c546dd9d857d",
+    "angebot": "Lieber Herr Frossard\n\nVielen Dank für Ihre Anfrage für eine Reise nach Marokko. Gerne erstelle ich Ihnen ein massgeschneidertes Premium-Angebot, das Ihre Wünsche nach Städteerlebnis, aktiven Wanderungen und entspannenden Wellness-Momenten perfekt kombiniert.\n\n## **Reisevorschlag: Marokko Imperial - Von Königsstädten bis zum Atlas**\n**Reisedauer:** 8 Tage / 7 Nächte  \n**Empfohlener Zeitraum:** 15. - 24. Mai 2026\n\nDiese exklusive Rundreise führt Sie durch Marokkos faszinierendste Königsstädte und in die beeindruckende Bergwelt des Hohen Atlas. Sie erleben die pulsierende Energie der Souks, wandern durch Berberdörfer und geniessen traditionelle Hammam-Behandlungen. Alle Mahlzeiten und Getränke sind inklusive, damit Sie sich ganz auf die authentischen Begegnungen mit Einheimischen konzentrieren können.\n\n## **Reiseroute**\n\n**Tag 1:** Ankunft in Marrakesch, Transfer zum luxuriösen Riad im Herzen der Medina, Welcome-Dinner mit traditioneller Folklore-Show\n\n**Tag 2:** Geführte Medina-Tour mit lokalem Guide, Besuch der Souks und des Bahia-Palastes, nachmittags entspannendes Hammam im traditionellen Spa\n\n**Tag 3:** Fahrt nach Imlil im Hohen Atlas, Check-in im Premium-Berglodge, leichte Wanderung zu einem Berbervillag mit Tee-Zeremonie bei einer lokalen Familie\n\n**Tag 4:** Ganztägige Wanderung zu den Wasserfällen von Imlil mit Picknick, abends Kochkurs mit der Berberfamilie\n\n**Tag 5:** Transfer nach Fès, Zwischenstopp in Beni Mellal, Check-in im historischen Riad-Hotel in der Medina\n\n**Tag 6:** Ganztägige Stadtführung durch Fès mit Handwerker-Besuch (Gerberei, Töpferei), abends Dinner bei einer lokalen Familie\n\n**Tag 7:** Fahrt nach Rabat, Besichtigung der Königsstadt und des Mausoleums, Transfer zum Flughafen Casablanca\n\n**Tag 8:** Rückflug in die Schweiz\n\n## **Inklusive Leistungen**\n- Flüge Zürich - Casablanca - Zürich (Economy Class)\n- 7 Übernachtungen in Premium-Unterkünften (Luxus-Riads und Berglodge)\n- Vollpension inkl. aller Getränke (All-Inclusive)\n- Alle Transfers und Rundreise im klimatisierten Fahrzeug mit privatem Chauffeur\n- Deutschsprachige, lokale Reiseleitung\n- Alle Eintritte und Besichtigungen gemäss Programm\n- Traditionelle Hammam-Behandlung\n- Kochkurs mit Berberfamilie\n- Wanderausrüstung (Stöcke, Rucksack)\n- Reiseversicherung Premium\n\n## **Preisübersicht**\n**Preis pro Person:** CHF 6'850  \n**Gesamtpreis für 2 Personen:** CHF 13'700\n\n*Preis basiert auf Premium-Kategorie Hotels und All-Inclusive-Verpflegung. Im Mai profitieren Sie von den angenehmen Frühlingstemperaturen - ideal für Wanderungen im Atlas.*\n\nIhr Angebot liegt perfekt in Ihrem gewünschten Budget-Rahmen und bietet Ihnen die authentischen, lokalen Erfahrungen, die Sie sich wünschen.\n\nSehr gerne lade ich Sie zu einem persönlichen Gespräch in unser Büro in Lenzburg ein, um die Details zu besprechen und Ihre Reise final auf Ihre Wünsche abzustimmen. Sie erreichen mich direkt unter 062 888 90 90.\n\nFreundliche Grüsse aus Lenzburg\n\n**Ihr SwissTravel Solutions Team**  \n*Ihr Spezialist für massgeschneiderte Fernreisen*"
+  },
+  {
+    "reisende": {
+      "erwachsene": 2,
+      "kinder": 0,
+      "kinderAlter": [],
+      "reisedatumVon": "2026-05-30",
+      "reisedatumBis": "2026-05-15",
+      "flexibel": false,
+      "dauerTage": 15
+    },
+    "destination": {
+      "destination": "Test Desitionaon",
+      "ueberraschen": false,
+      "regionen": [],
+      "reiseart": [
+        "Rundreise",
+        "Safari",
+        "Kreuzfahrt"
+      ]
+    },
+    "stil": {
+      "komfortLevel": "premium",
+      "budgetProPerson": 13000,
+      "wichtig": [
+        "All-Inclusive",
+        "Familienfreundlich"
+      ]
+    },
+    "kontakt": {
+      "vorname": "Test",
+      "nachname": "Frossard",
+      "email": "jeremyfrossard@icloud.com",
+      "telefon": "",
+      "kontaktweg": "email",
+      "kontaktzeit": "egal",
+      "nachricht": "Test alles über Reise",
+      "datenschutz": true
+    },
+    "metadaten": {
+      "quelleDestination": "Test Desitionaon",
+      "eingegangenAm": "2026-05-22T11:11:52.833Z",
+      "status": "angebot-gesendet"
+    },
+    "id": "ac282349-e023-4c41-a41b-bb4861e3f65c",
+    "angebot": "Lieber Herr Frossard\n\nVielen Dank für Ihre Anfrage! Ich habe bemerkt, dass in Ihren Reisedaten möglicherweise ein kleiner Fehler vorliegt (30. Mai bis 15. Mai 2026). Gerne gehe ich davon aus, dass Sie eine 15-tägige Reise ab dem 30. Mai 2026 planen möchten.\n\nDa Sie eine aussergewöhnliche Kombination aus Rundreise, Safari und Kreuzfahrt wünschen, habe ich für Sie ein exklusives, massgeschneidertes Angebot zusammengestellt:\n\n## Ihr Reisevorschlag: \"Südafrika & Mosambik - Safari, Kultur und Kreuzfahrt Deluxe\"\n\n**Reisedauer:** 15 Tage\n**Empfohlener Zeitraum:** 30. Mai – 13. Juni 2026\n\nEine faszinierende Kombination aus Big Five Safari im weltberühmten Krüger Nationalpark, kulturellen Entdeckungen in Kapstadt und einer luxuriösen Kreuzfahrt entlang der ostafrikanischen Küste. Diese Reise vereint drei Kontinente der Erfahrung in einem nahtlosen Premium-Erlebnis. Der südafrikanische Winter bietet ideale Safari-Bedingungen und angenehme Temperaturen für alle Aktivitäten.\n\n## Ihre Reiseroute\n\n**Tag 1-2:** Anreise nach Johannesburg, Transfer zur Krüger Region, Check-in im 5-Stern Tintswalo Safari Lodge mit All-Inclusive Verpflegung\n\n**Tag 3-5:** Intensive Safari-Erlebnisse im Krüger Nationalpark mit privaten Game Drives, Buschwanderungen und Sundowner, alle Mahlzeiten und Premium-Getränke inklusive\n\n**Tag 6-7:** Flug nach Kapstadt, Stadtbesichtigung mit Tafelberg und V&A Waterfront, Übernachtung im luxuriösen Belmond Mount Nelson Hotel\n\n**Tag 8:** Ausflug zu den Weinländern von Stellenbosch mit Degustationen, Rückkehr nach Kapstadt\n\n**Tag 9:** Einschiffung auf die MSC Sinfonia für 5-tägige Kreuzfahrt, Auslaufen aus Kapstadt\n\n**Tag 10-13:** Kreuzfahrt mit Stopps in Port Elizabeth, Durban und Lorenzo Marques (Mosambik), alle Mahlzeiten und Aktivitäten an Bord inklusive\n\n**Tag 14:** Ausschiffung in Durban, Flug zurück nach Johannesburg, letzter Abend im 5-Stern Intercontinental OR Tambo\n\n**Tag 15:** Rückflug nach Zürich\n\n## Inklusive Leistungen\n\n- Linienflüge Zürich–Johannesburg–Zürich in Premium Economy Class\n- Alle Inlandflüge (Johannesburg–Krüger–Kapstadt, Durban–Johannesburg)\n- 4 Nächte im Tintswalo Safari Lodge (5-Stern) mit All-Inclusive\n- 3 Nächte im Belmond Mount Nelson Hotel Kapstadt (5-Stern) mit Frühstück\n- 5 Nächte Kreuzfahrt MSC Sinfonia in Premium Balkonkabine mit All-Inclusive\n- 1 Nacht Intercontinental OR Tambo (5-Stern) mit Frühstück\n- Alle Transfers und Transporte vor Ort in privaten Fahrzeugen\n- Sämtliche Safari-Aktivitäten mit privatem Ranger\n- Stadtbesichtigung Kapstadt mit privatem Guide\n- Weinland-Ausflug mit Degustationen\n- Alle Eintritte und Nationalparkgebühren\n- Reiseversicherung Premium\n- 24h-Notfall-Hotline\n\n## Preisübersicht\n\n**Flüge:**\n- Zürich–Johannesburg–Zürich (Premium Economy): CHF 2'800 pro Person\n- Inlandflüge Südafrika: CHF 650 pro Person\n\n**Unterkünfte:**\n- Tintswalo Safari Lodge (4 Nächte à CHF 580): CHF 2'320 pro Person\n- Belmond Mount Nelson Hotel (3 Nächte à CHF 420): CHF 1'260 pro Person\n- MSC Sinfonia Premium Balkonkabine (5 Nächte à CHF 280): CHF 1'400 pro Person\n- Intercontinental OR Tambo (1 Nacht): CHF 180 pro Person\n\n**Transport & Transfers:** CHF 1'200 pro Person\n**Aktivitäten & Eintritte:** CHF 950 pro Person\n**Verpflegung (Safari All-Inclusive, Weinland-Ausflug, Kreuzfahrt All-Inclusive):** CHF 1'800 pro Person\n**Reiseversicherung & Service:** CHF 400 pro Person\n\n---\n**Preis pro Person:** CHF 13'040  \n**Gesamtpreis für 2 Personen:** CHF 26'080\n\nIhr Budget von CHF 13'000 pro Person passt perfekt zu diesem exklusiven Angebot! Der kleine Mehrpreis von CHF 40 pro Person ermöglicht uns, Ihnen wirklich erstklassige Unterkünfte und den gewünschten All-Inclusive Service zu bieten.\n\nGerne lade ich Sie zu einem persönlichen Gespräch in unser Büro in Lenzburg ein, wo wir alle Details besprechen und Ihr Traumreise-Erlebnis perfekt auf Ihre Wünsche abstimmen können. Sie erreichen mich unter 062 885 40 00 oder per E-Mail.\n\nIch freue mich darauf, mit Ihnen diese aussergewöhnliche Reise zu planen!\n\nHerzliche Grüsse aus Lenzburg\n\nIhr SwissTravel Solutions Team"
+  },
+  {
+    "reisende": {
+      "erwachsene": 2,
+      "kinder": 1,
+      "kinderAlter": [
+        8
+      ],
+      "reisedatumVon": "2026-07-10",
+      "reisedatumBis": "2026-07-24",
+      "flexibel": true,
+      "dauerTage": 14
+    },
+    "destination": {
+      "destination": "Costa Rica",
+      "ueberraschen": false,
+      "regionen": [],
+      "reiseart": [
+        "Rundreise",
+        "Aktiv & Wandern"
+      ]
+    },
+    "stil": {
+      "komfortLevel": "premium",
+      "budgetProPerson": 6000,
+      "wichtig": [
+        "Familienfreundlich",
+        "Lokale Erfahrungen"
+      ]
+    },
+    "kontakt": {
+      "vorname": "Lisa",
+      "nachname": "Meier",
+      "email": "jeremyfrossard@icloud.com",
+      "telefon": "+41 79 123 45 67",
+      "kontaktweg": "email",
+      "kontaktzeit": "vormittag",
+      "nachricht": "Wir reisen zum ersten Mal mit unserem Sohn nach Zentralamerika und moechten Natur und Tiere erleben, aber auch kindgerechte Aktivitaeten.",
+      "datenschutz": true
+    },
+    "metadaten": {
+      "quelleDestination": "Costa Rica",
+      "eingegangenAm": "2026-05-22T11:53:27.312Z",
+      "status": "angebot-gesendet"
+    },
+    "id": "5dae5cbe-8a70-4fb9-b360-e1bba85e046b",
+    "angebot": "Guten Tag Lisa Meier\n\nVielen Dank fuer Ihre Anfrage. Hier ist Ihr Costa Rica Angebot:\n\n## Reisevorschlag: Costa Rica Premium\n14 Tage, ab CHF 5995 pro Person.\n\nHerzliche Gruesse\nSwissTravel Solutions"
+  }
+]

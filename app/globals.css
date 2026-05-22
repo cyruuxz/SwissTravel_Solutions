@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-highlight: var(--highlight);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  /* Primär – warmes Off-White und tiefes Anthrazit */
+  --background: #F7F4EE;
+  --foreground: #1A1A1A;
+  --muted: #F0EBE3;
+  --muted-foreground: #6B6B6B;
+  --border: #E8E2D8;
+  --input: #E8E2D8;
+  --ring: #2C4A52;
+
+  /* Akzent – tiefes Petrol (Schweizer Bergsee) */
+  --accent: #2C4A52;
+  --accent-foreground: #F7F4EE;
+
+  /* Sekundär-Akzent – warmes Terracotta */
+  --highlight: #B85C3D;
+
+  /* shadcn mappings */
+  --primary: #1A1A1A;
+  --primary-foreground: #F7F4EE;
+  --secondary: #F0EBE3;
+  --secondary-foreground: #1A1A1A;
+  --destructive: #DC2626;
+  --popover: #F7F4EE;
+  --popover-foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+}
