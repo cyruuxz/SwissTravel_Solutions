@@ -1,10 +1,8 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import nodemailer from "nodemailer";
-import fs from "fs/promises";
-import path from "path";
+import { updateAnfrage } from "@/lib/storage";
 
-const DATA_FILE = path.join(process.cwd(), "data", "anfragen.json");
 const AGENCY_NAME = "SwissTravel Solutions";
 
 const resend = process.env.RESEND_API_KEY
@@ -134,20 +132,10 @@ export async function POST(request: Request) {
     // Status auf "angebot-gesendet" aktualisieren
     if (anfrageId) {
       try {
-        const data = await fs.readFile(DATA_FILE, "utf-8");
-        const anfragen = JSON.parse(data);
-        const index = anfragen.findIndex(
-          (a: { id: string }) => a.id === anfrageId
-        );
-        if (index !== -1) {
-          anfragen[index].metadaten.status = "angebot-gesendet";
-          anfragen[index].angebot = angebotText;
-          await fs.writeFile(
-            DATA_FILE,
-            JSON.stringify(anfragen, null, 2),
-            "utf-8"
-          );
-        }
+        await updateAnfrage(anfrageId, {
+          status: "angebot-gesendet",
+          angebot: angebotText,
+        });
       } catch {
         console.error("[Angebot] Status-Update fehlgeschlagen");
       }

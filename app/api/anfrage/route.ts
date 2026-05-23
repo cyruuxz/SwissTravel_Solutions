@@ -1,11 +1,7 @@
 import { NextResponse } from "next/server";
 import { anfrageSchema } from "@/lib/schemas";
 import { sendAnfrageEmails } from "@/lib/email";
-import fs from "fs/promises";
-import path from "path";
-
-const DATA_DIR = path.join(process.cwd(), "data");
-const DATA_FILE = path.join(DATA_DIR, "anfragen.json");
+import { saveAnfrage } from "@/lib/storage";
 
 export async function POST(request: Request) {
   try {
@@ -29,20 +25,7 @@ export async function POST(request: Request) {
       id: crypto.randomUUID(),
     };
 
-    // Ensure data directory exists
-    await fs.mkdir(DATA_DIR, { recursive: true });
-
-    // Read existing data or initialize
-    let anfragen: unknown[] = [];
-    try {
-      const existingData = await fs.readFile(DATA_FILE, "utf-8");
-      anfragen = JSON.parse(existingData);
-    } catch {
-      // File doesn't exist yet
-    }
-
-    anfragen.push(anfrage);
-    await fs.writeFile(DATA_FILE, JSON.stringify(anfragen, null, 2), "utf-8");
+    await saveAnfrage(anfrage);
 
     // E-Mails senden (Fehler blockieren die Anfrage nicht)
     try {
