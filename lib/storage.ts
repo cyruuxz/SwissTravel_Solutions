@@ -1,13 +1,21 @@
-import { kv } from "@vercel/kv";
+import { Redis } from "@upstash/redis";
 import fs from "fs/promises";
 import path from "path";
 
 const DATA_FILE = path.join(process.cwd(), "data", "anfragen.json");
 const KV_KEY = "anfragen";
 
-// Prüfe ob Vercel KV verfügbar ist
-function useKV(): boolean {
-  return !!(process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN);
+// Redis-Client erstellen wenn Credentials vorhanden
+function getRedis(): Redis | null {
+  const url =
+    process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
+  const token =
+    process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
+
+  if (url && token) {
+    return new Redis({ url, token });
+  }
+  return null;
 }
 
 export type AnfrageRecord = {
@@ -53,8 +61,9 @@ export type AnfrageRecord = {
 
 // Alle Anfragen laden
 export async function getAnfragen(): Promise<AnfrageRecord[]> {
-  if (useKV()) {
-    const data = await kv.get<AnfrageRecord[]>(KV_KEY);
+  const redis = getRedis();
+  if (redis) {
+    const data = await redis.get<AnfrageRecord[]>(KV_KEY);
     return data || [];
   }
 
@@ -81,11 +90,16 @@ export async function saveAnfrage(
   const anfragen = await getAnfragen();
   anfragen.push(anfrage);
 
-  if (useKV()) {
-    await kv.set(KV_KEY, anfragen);
+  const redis = getRedis();
+  if (redis) {
+    await redis.set(KV_KEY, anfragen);
   } else {
     await fs.mkdir(path.dirname(DATA_FILE), { recursive: true });
-    await fs.writeFile(DATA_FILE, JSON.stringify(anfragen, null, 2), "utf-8");
+    await fs.writeFile(
+      DATA_FILE,
+      JSON.stringify(anfragen, null, 2),
+      "utf-8"
+    );
   }
 }
 
@@ -113,10 +127,15 @@ export async function updateAnfrage(
     anfragen[index].angebot = updates.angebot;
   }
 
-  if (useKV()) {
-    await kv.set(KV_KEY, anfragen);
+  const redis = getRedis();
+  if (redis) {
+    await redis.set(KV_KEY, anfragen);
   } else {
-    await fs.writeFile(DATA_FILE, JSON.stringify(anfragen, null, 2), "utf-8");
+    await fs.writeFile(
+      DATA_FILE,
+      JSON.stringify(anfragen, null, 2),
+      "utf-8"
+    );
   }
 
   return anfragen[index];
