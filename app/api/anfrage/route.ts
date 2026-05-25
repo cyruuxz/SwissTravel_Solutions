@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { anfrageSchema } from "@/lib/schemas";
-import { sendAnfrageEmails } from "@/lib/email";
 import { saveAnfrage } from "@/lib/storage";
 
 export async function POST(request: Request) {
@@ -18,7 +17,7 @@ export async function POST(request: Request) {
     const anfrage = {
       ...result.data,
       metadaten: {
-        quelleDestination: result.data.destination.destination || undefined,
+        quelleDestination: result.data.destination.destination || "",
         eingegangenAm: new Date().toISOString(),
         status: "neu" as const,
       },
@@ -29,6 +28,7 @@ export async function POST(request: Request) {
 
     // E-Mails senden (Fehler blockieren die Anfrage nicht)
     try {
+      const { sendAnfrageEmails } = await import("@/lib/email");
       await sendAnfrageEmails(anfrage);
     } catch (emailError) {
       console.error("[Email] Fehler beim Senden:", emailError);
@@ -38,7 +38,8 @@ export async function POST(request: Request) {
       { success: true, id: anfrage.id },
       { status: 201 }
     );
-  } catch {
+  } catch (error) {
+    console.error("[Anfrage] Fehler:", error);
     return NextResponse.json(
       { error: "Serverfehler. Bitte versuchen Sie es später erneut." },
       { status: 500 }
